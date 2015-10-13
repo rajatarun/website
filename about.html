@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script type="text/javascript" src="anim.js"> </script>
+<meta charset="UTF-8"> 
+<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+<style>
+html{
+width = 100%;
+height = 100%;
+}
+.heading{
+background:-webkit-linear-gradient(red, green);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body{
+//background-image:url(http://neirstavern.com/wp-content/uploads/2013/09/website-background-brick-wall.jpg);
+background-image:url(http://enjoycss.com/webshots/hs_1.png);
+//background-image: url(http://tjrus.com/img/lab/css3-blue-bg.jpg);
+//background-size:100% 100%;
+
+}
+.description{
+display:hidden;
+}
+.menu5{
+border-left:300px;
+}
+div.box{
+text-align:left;
+color:rgba(0,0,0,0.7);
+//font-weight:bold;
+font-style:cursive;
+border-radius:10px;
+//border-bottom-left-radius:50px;
+//border-top-left-radius:100px;
+//border-bottom-right-radius:10px;
+margin-top:50px;
+margin-left:300px;
+margin-right:50px;
+//padding-left:40px;
+padding:40px;
+//opacity:0.3;
+//font-family:'sans serif'; 
+//background-color:rgba(255,255,255,0.7);
+
+}
+#sectionheading{
+font-family: 'Luckiest Guy', cursive;
+color:green;
+font-size:40px;
+}
+p{
+font-size:20px;
+}
+.rowtext{
+font-family: 'Pompiere', cursive;
+font-weight: 900;
+font-size: 25px;
+}
+.descriptiontext{
+font-family: 'Open Sans Condensed', sans-serif;
+text-indent:50px;
+}
+#news{
+left-margin:100px;
+opacity:1;
+}
+div.input{
+font-family:"papyrus",arial;
+margin-top:50px;
+}
+div.menu1{
+left: 300px;
+font-size:30px;
+font-weight:bold;
+color:green;
+text-align:center;
+font-family:'verdana',"papyrus",arial,'sans serif'; 
+width:40px;
+height:40px;
+border-radius:50px;
+background-color:#2f7e17;
+display: inline-block;
+margin-left:380px;
+margin-top:10px;
+margin-botton : 10px;
+}
+
+div.menu2{
+font-size:30px;
+font-weight:bold;
+font-family:'verdana',"papyrus",arial,'sans serif'; 
+color:green;
+text-align:center;
+width:40px;
+height:40px;
+border-radius:50px;
+display: inline-block;
+background-color:#2f7e17;
+margin-left:20px;
+margin-top:10px;
+margin-botton : 10px;
+
+}
+div.menu3{
+font-size:30px;
+font-weight:bold;
+text-align:center;
+color:green;
+font-family:'verdana',"papyrus",arial,'sans serif'; 
+width:40px;
+height:40px;
+display: inline-block;
+border-radius:50px;
+background-color:#2f7e17;
+margin-top:10px;
+margin-botton : 10px;
+margin-left:20px;
+}
+div.menu4{
+font-size:30px;
+font-weight:bold;
+color:green;
+text-align:center;
+font-family:'verdana',"papyrus",arial,'sans serif'; 
+width:40px;
+height:40px;
+border-radius:50px;
+display: inline-block;
+background-color:#2f7e17;
+margin-top:10px;
+margin-left:20px;
+margin-botton : 10px;
+
+}
+.menu {
+//  background: #202024 url(http://www.hotglitters.net/glitterjoy/backgrounds/pattern/green-maze.gif) repeat left top;
+  background: #202024 url(http://enjoycss.com/webshots/hB_1.png) repeat left top;
+
+  //  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.pn') repeat left top;
+  left: -285px;  /* start off behind the scenes */
+  height: 705px;
+  position: fixed;
+  width: 285px;
+}
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+div.menu-icon{
+color:#346026;
+font-family:'verdana';
+font-size:30px;
+font-weight:bold;
+margin-left: 30px;
+}
+.button{
+height:50px;
+width:150px;
+border: 1px;
+background-color:#FF6600;
+cursor:pointer;
+font-family: 'Pompiere', cursive;
+font-size:30px;
+}
+.button:hover{
+background-color:#000066;
+color:white;
+font-weight:bold;
+}
+.newsstand{
+margin-top:100px;
+margin-left:300px;
+}
+.news{
+top-margin:-100px;
+}
+</style>
+<link rel ="stylesheet" type="text/css" href="indexstyle.css">
+
+</head>
+<body class="body" >
+
+
+<!-- "background-image: url(http://tjrus.com/img/lab/css3-blue-bg.jpg)">-->
+<!-- "background:linear-gradient(90deg,#5D4157 2%,#A8CABA 50%,white">-->
+ <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
+
+      <!-- Menu -->
+      <ul>
+	<li><a href="index.html">Home</a></li>
+        <li><a href="about.html">News</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+<table class="menu5"> 
+	<tr>
+		<td>
+		<div class="menu-icon">
+		MENU
+		
+		</div>
+		</td>
+		<td>
+		</td>
+		<td>
+		<div class = "menu1">
+			f
+		</div>
+		</td>
+		<td>
+		<div class = "menu2">
+			G
+		</div>
+		</td>
+		<td>
+		<div class = "menu3">
+			t	
+		</div>
+		</td>
+		<td>
+		<div class  = "menu4">
+			Li<!--<h5>Contact</h5>-->
+		</div>
+		</td>
+	</tr>
+	
+</table>
+<table class = "newsstand">
+	<tr>
+		<td>
+		<div>
+		<input class="button" type="button" value="Arts" onclick = "newsselect(1)" >
+		</div>
+		</td>
+		<td>
+		<div>
+		<input class="button" type="button" value="Bussiness" onclick =" newsselect(2)"/>
+		</div>
+		</td>
+		<td>
+		<div>
+		<input class="button" type="button" value="Sports" onclick = "newsselect(3)"/>
+		</div>
+		</td>
+		<td>
+		<div>
+		<input class="button" type="button" value="World" onclick = "newsselect(4)"/>
+		</div>
+		</td>
+		<td>
+		<div>
+		<input class="button" type="button" value="U.S." onclick = "newsselect(5)"/>
+		</div>
+		</td>
+	
+	</tr>
+		
+</table>
+
+<div class="box">
+	<div id="news">
+	</div>
+</div>
+
+<!--<div>
+	<form action="form.php" method="post">
+		<table class = "input" align = center>
+		<tr>
+			<td>
+			<div class = "input">
+			Enter your name:
+			<input type="text" name="inp" placeholder="Enter name"> 
+			</div>
+			</td>
+			
+			<td>
+			<div class = "input">
+			<input type="submit" value="Submit" >
+			</tr>
+			</div>
+		</table>
+	</form>
+</div> -->
+<script type="text/javascript" src="nytimes.js"></script>
+
+<div >
+<p id = "result" name = "result"> </p>
+</div>
+</body>
+</html>
